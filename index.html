@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and responsive weather application powered by Open Weather API.">
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <input type="text" name="location" id="geo-location" placeholder="Search for place or city.."
+                autocomplete="off" autocapitalize="off" required />
+
+            <div class="weather-info">
+                <img src="/images/clear-day.svg" alt="">
+                <div class="temperature-day-time">
+                    <h1 class="temperature">32<sup>°C</sup></h1>
+                    <span class="day-time">Monday <span class="time">13:20</span></span>
+                </div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="feels-location-info">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="/images/uv-index.svg" alt="">
+                    <span style="font-weight: 600;">Mostly UV</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.6rem;">
+                    <h2 class="location-name">Mumbai</h2>
+                    <img src="/images/location-icon.svg" alt="" class="location-icon">
+                </div>
+            </div>
+        </form>
+
+        <div class="highlights">
+            <p class="highlights-title">Today's highlights</p>
+
+            <div class="highlight-data">
+
+                <div class="uv card">
+                    <span class="title">UV Index</span>
+                    <img src="/images/uv-index.svg" alt="">
+                    <span class="card-value">Moderate</span>
+                </div>
+
+                <div class="humidity card">
+                    <span class="title">Humidity</span>
+                    <img src="/images/humidity.svg" alt="">
+                    <span class="card-value">35%</span>
+                </div>
+
+                <div class="wind-speed card">
+                    <span class="title">Wind Speed</span>
+                    <img src="/images/wind.svg" alt="">
+                    <span class="card-value">10 km/h</span>
+                </div>
+
+                <div class="sunrise card">
+                    <span class="title">Sunrise</span>
+                    <img src="/images/sunrise.svg" alt="">
+                    <span class="card-value">06:42 AM</span>
+                </div>
+
+                <div class="sunset card">
+                    <span class="title">Sunset</span>
+                    <img src="/images/sunset.svg" alt="">
+                    <span class="card-value">06:02 PM</span>
+                </div>
+
+                <div class="visibility card">
+                    <span class="title">Visibility</span>
+                    <img src="/images/fog.svg" alt="">
+                    <span class="card-value">8.5 km/h</span>
+                </div>
+
+                <div class="aqi card">
+                    <span class="title">Air Quality Index</span>
+                    <img src="/images/barometer.svg" alt="">
+                    <span class="card-value">High (8)</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js" defer></script>
+</body>
+
+</html>

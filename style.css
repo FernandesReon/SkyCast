@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #F9FAFB;
+    --container-background-color: whitesmoke;
+    --primary-text-color: #333;
+    --secondary-text-color: #6B44E0;
+    ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background-color);
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+
+}
+
+body,
+input,
+button {
+    font-family: "JetBrains Mono", monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.container{
+    width: 100%;
+    max-width: 80.35rem;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-text-color);
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    gap: 1rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+form > input{
+    padding: 0.6rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    background: rgba(128, 128, 128, 0.1);
+}
+
+form > input[type="text"]{
+    font-size: 01rem;
+    font-weight: 500;
+    caret-color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
+}
+
+.weather-info img{
+    max-width: 200px;
+    height: auto;
+}
+
+.weather-info .temperature{
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--secondary-text-color);
+}
+
+.weather-info .day-time{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.weather-info .time{
+    color: rgba(128, 128, 128, 0.6);
+}
+
+.hr{
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-text-color);
+    opacity: 0.1;
+    margin: 1rem auto;
+}
+
+.feels-location-info img{
+    max-width: 50px;
+    height: auto;
+}
+
+.feels-location-info .location-icon{
+    max-width: 20px;
+}
+
+.location-name{
+    color: var(--secondary-text-color);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.highlights{
+    width: 100%;
+    background: rgba(128, 128, 128, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.8rem;
+    margin: 2rem auto;
+}
+
+.highlight-data{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.card{
+    background: var(--background-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    opacity: 0.8;
+}
+
+.card .card-value{
+    font-weight: 800;
+    color: var(--primary-text-color);
+}
+
+.highlights-title{
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 30rem;
+        grid-template-columns: 1fr;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    form input{
+        width: 100%;
+    }
+}
