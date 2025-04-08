@@ -36,8 +36,7 @@ const WeatherApp = () => {
         <div className="page">
             <main className="main">
                 <div className="container">
-                    <h1 className="title">SkyCast</h1>
-
+                    <h1 className="title">DriftSky</h1>
                     <SearchBar onSearch={handleSearch} />
 
                     {loading && (

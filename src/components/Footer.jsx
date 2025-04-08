@@ -6,9 +6,9 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer-section">
-                        <h3 className="footer-heading">SkyCast</h3>
+                        <h3 className="footer-heading">DriftSky</h3>
                         <p className="footer-text">
-                            SkyCast is a weather forecast application built using React.js and powered by the Open Weather API to fetch accurate weather information.
+                        DriftSky is a weather forecast application built using React.js and powered by the Open Weather API to fetch accurate weather information.
                         </p>
                     </div>
 
